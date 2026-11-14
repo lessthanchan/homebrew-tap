@@ -5,7 +5,7 @@ cask "unzip-app" do
   url "https://github.com/lessthanchan/homebrew-tap/releases/download/v#{version}/UNZIP.dmg"
   name "UNZIP"
   desc "빠르고 미려한 네이티브 압축 해제 프로그램"
-  homepage "https://github.com/lessthanchan"
+  homepage "https://lessthanchan.github.io/homebrew-tap/"
 
   depends_on macos: :sonoma
 
