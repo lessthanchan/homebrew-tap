@@ -18,7 +18,7 @@
   .btn { display:inline-block; background:var(--blue); color:#fff; text-decoration:none; padding:14px 28px; border-radius:980px; font-weight:600; }
   .meta { color:var(--sub); font-size:14px; margin-top:12px; }
   pre { display:inline-block; background:var(--card); padding:12px 18px; border-radius:12px; font:15px ui-monospace, Menlo, monospace; margin:8px 0 0; user-select:all; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin:56px 0; text-align:left; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:16px; margin:56px 0; text-align:left; }
   .card { background:var(--card); border-radius:18px; padding:24px; }
   .card h2 { font-size:19px; margin:0 0 6px; }
   .card p { margin:0; color:var(--sub); font-size:15px; }
@@ -32,7 +32,7 @@
 <main>
   <img class="icon" src="icon.png" alt="UNZIP 앱 아이콘">
   <h1>UNZIP</h1>
-  <p class="lead">끌어다 놓으면 풀립니다.</p>
+  <p class="lead">팝업 없이 조용히 풀고,<br>Windows에서 만든 한글 파일명도 깨지지 않습니다.</p>
 
   <a class="btn" href="https://github.com/lessthanchan/homebrew-tap/releases/latest/download/UNZIP.dmg">Mac용 다운로드</a>
   <p class="meta">macOS 14 Sonoma 이상 · 무료</p>
@@ -40,9 +40,10 @@
   <pre>brew install --cask lessthanchan/tap/unzip-app</pre>
 
   <section class="grid">
-    <div class="card"><h2>70개 형식</h2><p>zip, rar, 7z, tar 등 흔히 받는 압축 파일을 한 앱으로 풉니다.</p></div>
-    <div class="card"><h2>한글 파일명 그대로</h2><p>Windows에서 만든 압축 파일의 파일명이 깨지면 CP949 같은 인코딩을 미리보기로 골라 풉니다.</p></div>
-    <div class="card"><h2>여러 개를 한 번에</h2><p>여러 파일을 놓으면 차례로 풀고, 진행 상황과 남은 시간을 보여 줍니다.</p></div>
+    <div class="card"><h2>한글 파일명 그대로</h2><p>Windows에서 만든 압축 파일의 한글 파일명을 알아서 맞춰 풉니다. 그래도 깨지면 미리보기를 보며 인코딩을 고릅니다.</p></div>
+    <div class="card"><h2>팝업 없이 창 하나</h2><p>암호 입력, 진행률, 오류까지 작은 창의 한 줄 안에서 끝납니다. 다 풀리면 조용히 사라집니다.</p></div>
+    <div class="card"><h2>압축도 됩니다</h2><p>폴더를 놓으면 zip, 7z, tar 등 6가지 형식으로 묶습니다. 압축 파일 여러 개를 한 폴더에 모아 풀 수도 있습니다.</p></div>
+    <div class="card"><h2>70개 형식</h2><p>zip, rar, 7z, tar 등 흔히 받는 압축 파일을 한 앱으로 풉니다. 실패해도 풀다 만 파일을 남기지 않습니다.</p></div>
   </section>
 
   <details>
