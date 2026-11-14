@@ -1,6 +1,6 @@
 cask "unzip-app" do
-  version "1.0.0"
-  sha256 "b0114a674c85b2d52348b4b26d71e4a23bf8954fa456fd55b20497dfca08f1b0"
+  version "1.0.1"
+  sha256 "d17916811fc33c3548fa6a46898974208c065f5a43fe03397b0e747628da8139"
 
   url "https://github.com/lessthanchan/homebrew-tap/releases/download/v#{version}/UNZIP.dmg"
   name "UNZIP"
