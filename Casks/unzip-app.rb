@@ -4,7 +4,7 @@ cask "unzip-app" do
 
   url "https://github.com/lessthanchan/homebrew-tap/releases/download/v#{version}/UNZIP.dmg"
   name "UNZIP"
-  desc "빠르고 미려한 macOS 네이티브 압축 해제 프로그램"
+  desc "빠르고 미려한 네이티브 압축 해제 프로그램"
   homepage "https://github.com/lessthanchan"
 
   depends_on macos: :sonoma
@@ -13,7 +13,5 @@ cask "unzip-app" do
 
   uninstall quit: "com.buzz.unzip"
 
-  zap trash: [
-    "~/Library/Preferences/com.buzz.unzip.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.buzz.unzip.plist"
 end
